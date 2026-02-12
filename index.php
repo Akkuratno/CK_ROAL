@@ -27,7 +27,7 @@
                 <a href="#advantages" class="nav__link">Преимущества</a>
                 <a href="#contacts" class="nav__link">Контакты</a>
             </nav>
-            <a href="tel:+78001234567" class="header__phone">+7 (800) 123-45-67</a>
+            <a href="tel:+79670999797" class="header__phone">+7 (967) 099-97-97</a>
             <button class="burger" id="burger" aria-label="Меню">
                 <span></span><span></span><span></span>
             </button>
@@ -153,7 +153,7 @@
             </div>
             <div class="projects__grid">
                 <div class="project-card fade-in">
-                    <div class="project-card__img" style="background: linear-gradient(135deg, #1a365d, #2d6a9f);">
+                    <div class="project-card__img" style="background-image: url('images/proekt/cor.png'); background-size: cover; background-position: center;">
                         <div class="project-card__overlay">
                             <span class="project-card__tag">Жилой комплекс</span>
                         </div>
@@ -165,7 +165,7 @@
                     </div>
                 </div>
                 <div class="project-card fade-in">
-                    <div class="project-card__img" style="background: linear-gradient(135deg, #1a4731, #2d9f6a);">
+                    <div class="project-card__img" style="background-image: url('images/proekt/olimp.jpg'); background-size: cover; background-position: center;">
                         <div class="project-card__overlay">
                             <span class="project-card__tag">Коммерческий</span>
                         </div>
@@ -177,7 +177,7 @@
                     </div>
                 </div>
                 <div class="project-card fade-in">
-                    <div class="project-card__img" style="background: linear-gradient(135deg, #4a1a5d, #9f2d8a);">
+                    <div class="project-card__img" style="background-image: url('images/proekt/roal-park.jpe'); background-size: cover; background-position: center;">
                         <div class="project-card__overlay">
                             <span class="project-card__tag">Коттеджный посёлок</span>
                         </div>
@@ -189,7 +189,7 @@
                     </div>
                 </div>
                 <div class="project-card fade-in">
-                    <div class="project-card__img" style="background: linear-gradient(135deg, #5d3a1a, #c98a2d);">
+                    <div class="project-card__img" style="background-image: url('images/proekt/monax.jpg'); background-size: cover; background-position: center;">
                         <div class="project-card__overlay">
                             <span class="project-card__tag">Торговый центр</span>
                         </div>
@@ -258,8 +258,8 @@
                         <div class="contact-item__icon">&#9742;</div>
                         <div>
                             <h4>Телефон</h4>
-                            <a href="tel:+78001234567">+7 (800) 123-45-67</a>
-                            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                            <a href="tel:+79670999797">+7 (967) 099-97-97</a>
+                            
                         </div>
                     </div>
                     <div class="contact-item">
@@ -345,3 +345,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
