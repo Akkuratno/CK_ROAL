@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header" id="header">
         <div class="container header__inner">
             <a href="#" class="logo">
-                <span class="logo__icon">&#9670;</span>
+                <span class="logo__icon"><i class="fas fa-gem"></i></span>
                 <div class="logo__text">
                     <span class="logo__name">СК РОЯЛ</span>
                     <span class="logo__sub">строительная компания</span>
@@ -27,7 +28,7 @@
                 <a href="#advantages" class="nav__link">Преимущества</a>
                 <a href="#contacts" class="nav__link">Контакты</a>
             </nav>
-            <a href="tel:+79670999797" class="header__phone">+7 (967) 099-97-97</a>
+            <a href="tel:+79670999797" class="header__phone"><i class="fas fa-phone"></i> +7 (967) 099-97-97</a>
             <button class="burger" id="burger" aria-label="Меню">
                 <span></span><span></span><span></span>
             </button>
@@ -73,22 +74,22 @@
             </div>
             <div class="about__grid">
                 <div class="about__card fade-in">
-                    <div class="about__icon">&#9881;</div>
+                    <div class="about__icon"><i class="fas fa-hard-hat"></i></div>
                     <h3>Профессионализм</h3>
                     <p>Команда квалифицированных инженеров, архитекторов и строителей с многолетним опытом работы.</p>
                 </div>
                 <div class="about__card fade-in">
-                    <div class="about__icon">&#9733;</div>
+                    <div class="about__icon"><i class="fas fa-star"></i></div>
                     <h3>Качество</h3>
                     <p>Используем только сертифицированные материалы и современные технологии строительства.</p>
                 </div>
                 <div class="about__card fade-in">
-                    <div class="about__icon">&#9201;</div>
+                    <div class="about__icon"><i class="fas fa-clock"></i></div>
                     <h3>Сроки</h3>
                     <p>Строго соблюдаем сроки выполнения работ, прописанные в договоре.</p>
                 </div>
                 <div class="about__card fade-in">
-                    <div class="about__icon">&#9878;</div>
+                    <div class="about__icon"><i class="fas fa-shield-alt"></i></div>
                     <h3>Гарантия</h3>
                     <p>Предоставляем гарантию на все выполненные работы сроком до 5 лет.</p>
                 </div>
@@ -255,7 +256,7 @@
             <div class="contacts__grid">
                 <div class="contacts__info fade-in">
                     <div class="contact-item">
-                        <div class="contact-item__icon">&#9742;</div>
+                        <div class="contact-item__icon"><i class="fas fa-phone-alt"></i></div>
                         <div>
                             <h4>Телефон</h4>
                             <a href="tel:+79670999797">+7 (967) 099-97-97</a>
@@ -263,21 +264,21 @@
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-item__icon">&#9993;</div>
+                        <div class="contact-item__icon"><i class="fas fa-envelope"></i></div>
                         <div>
                             <h4>Email</h4>
                             <a href="mailto:info@sk-royal.ru">info@sk-royal.ru</a>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-item__icon">&#9906;</div>
+                        <div class="contact-item__icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div>
                             <h4>Адрес</h4>
                             <p>г. Москва, ул. Строителей, д. 15, офис 301</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-item__icon">&#9200;</div>
+                        <div class="contact-item__icon"><i class="fas fa-business-time"></i></div>
                         <div>
                             <h4>Режим работы</h4>
                             <p>Пн-Пт: 9:00 — 18:00</p>
@@ -313,7 +314,7 @@
             <div class="footer__top">
                 <div class="footer__brand">
                     <a href="#" class="logo logo--light">
-                        <span class="logo__icon">&#9670;</span>
+                        <span class="logo__icon"><i class="fas fa-gem"></i></span>
                         <div class="logo__text">
                             <span class="logo__name">СК РОЯЛ</span>
                             <span class="logo__sub">строительная компания</span>
