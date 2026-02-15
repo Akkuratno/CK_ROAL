@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>ООО "СК РОЯЛ" — Строительная компания</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Шапка -->
     <header class="header" id="header">
         <div class="container header__inner">
             <a href="#" class="logo">
@@ -35,7 +35,7 @@
         </div>
     </header>
 
-    <!-- Hero -->
+    <!-- Главный экран -->
     <section class="hero">
         <div class="hero__bg"></div>
         <div class="container hero__inner">
@@ -50,22 +50,22 @@
             </div>
             <div class="hero__stats">
                 <div class="stat">
-                    <span class="stat__num" data-target="15">0</span><span class="stat__plus">+</span>
-                    <span class="stat__label">лет опыта</span>
+                    <span class="stat__num" data-target="5">0</span>
+                    <span class="stat__label">лет на рынке</span>
                 </div>
                 <div class="stat">
-                    <span class="stat__num" data-target="200">0</span><span class="stat__plus">+</span>
-                    <span class="stat__label">объектов сдано</span>
-                </div>
-                <div class="stat">
-                    <span class="stat__num" data-target="50">0</span><span class="stat__plus">+</span>
+                    <span class="stat__num" data-target="14">0</span>
                     <span class="stat__label">специалистов</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__num" data-target="60">0</span><span class="stat__plus"> млн</span>
+                    <span class="stat__label">выручка 2024</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About -->
+    <!-- О нас -->
     <section class="about section" id="about">
         <div class="container">
             <div class="section__header">
@@ -97,7 +97,7 @@
         </div>
     </section>
 
-    <!-- Services -->
+    <!-- Услуги -->
     <section class="services section" id="services">
         <div class="container">
             <div class="section__header">
@@ -145,7 +145,7 @@
         </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Проекты -->
     <section class="projects section" id="projects">
         <div class="container">
             <div class="section__header">
@@ -205,7 +205,7 @@
         </div>
     </section>
 
-    <!-- Advantages -->
+    <!-- Преимущества -->
     <section class="advantages section" id="advantages">
         <div class="container">
             <div class="section__header">
@@ -237,7 +237,7 @@
         </div>
     </section>
 
-    <!-- CTA -->
+    <!-- Призыв к действию -->
     <section class="cta section">
         <div class="container cta__inner">
             <h2 class="cta__title">Готовы начать строительство?</h2>
@@ -246,7 +246,7 @@
         </div>
     </section>
 
-    <!-- Contacts -->
+    <!-- Контакты -->
     <section class="contacts section" id="contacts">
         <div class="container">
             <div class="section__header">
@@ -267,22 +267,22 @@
                         <div class="contact-item__icon"><i class="fas fa-envelope"></i></div>
                         <div>
                             <h4>Email</h4>
-                            <a href="mailto:info@sk-royal.ru">info@sk-royal.ru</a>
+                            <a href="mailto:info@sk-royal.ru">hertvvv@mail.ru</a>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-item__icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div>
-                            <h4>Адрес</h4>
-                            <p>г. Москва, ул. Строителей, д. 15, офис 301</p>
+                            <h4>Юридический адрес</h4>
+                            <p>119002, г. Москва, ул. Арбат, д. 54/2, стр. 1, помещ. 1/п</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-item__icon"><i class="fas fa-business-time"></i></div>
                         <div>
                             <h4>Режим работы</h4>
-                            <p>Пн-Пт: 9:00 — 18:00</p>
-                            <p>Сб: 10:00 — 15:00</p>
+                            <p>Пн-Пт: 9:00 — 20:00</p>
+
                         </div>
                     </div>
                 </div>
@@ -308,7 +308,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Подвал -->
     <footer class="footer">
         <div class="container footer__inner">
             <div class="footer__top">
@@ -338,7 +338,7 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>&copy; 2026 ООО «СК РОЯЛ». Все права защищены.</p>
+                <p>&copy; 2025 ООО «СК Роял». ОГРН 1205000042554, ИНН 5074064079. Все права защищены.</p>
             </div>
         </div>
     </footer>

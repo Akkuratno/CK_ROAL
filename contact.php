@@ -11,7 +11,7 @@ $phone   = trim($_POST['phone'] ?? '');
 $email   = trim($_POST['email'] ?? '');
 $message = trim($_POST['message'] ?? '');
 
-// Validation
+// Проверка данных
 if (empty($name) || empty($phone)) {
     echo json_encode(['success' => false, 'message' => 'Заполните обязательные поля: имя и телефон']);
     exit;
@@ -22,13 +22,13 @@ if (!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-// Sanitize
+// Очистка данных
 $name    = htmlspecialchars($name, ENT_QUOTES, 'UTF-8');
 $phone   = htmlspecialchars($phone, ENT_QUOTES, 'UTF-8');
 $email   = htmlspecialchars($email, ENT_QUOTES, 'UTF-8');
 $message = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');
 
-// Save to file (as simple storage)
+// Сохранение в файл (простое хранилище)
 $data = [
     'date'    => date('Y-m-d H:i:s'),
     'name'    => $name,
@@ -48,11 +48,11 @@ if (file_exists($file)) {
 $leads[] = $data;
 file_put_contents($file, json_encode($leads, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
-// Optional: send email notification
-$to = 'info@sk-royal.ru';
+// Опционально: отправка уведомления на почту
+$to = 'hertvvv@mail.ru';
 $subject = 'Новая заявка с сайта СК РОЯЛ';
 $body = "Имя: $name\nТелефон: $phone\nEmail: $email\nСообщение: $message";
-$headers = "From: noreply@sk-royal.ru\r\nContent-Type: text/plain; charset=utf-8";
+$headers = "From: noreply@hertvvv.mail.ru\r\nContent-Type: text/plain; charset=utf-8";
 
 @mail($to, $subject, $body, $headers);
 

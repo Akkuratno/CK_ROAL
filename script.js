@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Header scroll effect ---
+    // --- Эффект шапки при прокрутке ---
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
         header.classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // --- Mobile menu ---
+    // --- Мобильное меню ---
     const burger = document.getElementById('burger');
     const nav = document.getElementById('nav');
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.classList.toggle('open');
     });
 
-    // Close menu on link click
+    // Закрыть меню при клике по ссылке
     nav.querySelectorAll('.nav__link').forEach(link => {
         link.addEventListener('click', () => {
             burger.classList.remove('active');
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Active nav link on scroll ---
+    // --- Подсветка активного пункта меню при прокрутке ---
     const sections = document.querySelectorAll('.section[id]');
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY + 120;
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Counter animation ---
+    // --- Анимация счётчиков ---
     const counters = document.querySelectorAll('.stat__num[data-target]');
     let countersStarted = false;
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Start counters when hero stats are visible
+    // Запуск счётчиков при появлении блока статистики на экране
     const statsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !countersStarted) {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroStats = document.querySelector('.hero__stats');
     if (heroStats) statsObserver.observe(heroStats);
 
-    // --- Fade-in on scroll ---
+    // --- Появление элементов при прокрутке ---
     const fadeElements = document.querySelectorAll('.fade-in');
     const fadeObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fadeElements.forEach(el => fadeObserver.observe(el));
 
-    // --- Phone mask ---
+    // --- Маска телефона ---
     const phoneInput = document.getElementById('phone');
     if (phoneInput) {
         phoneInput.addEventListener('input', (e) => {
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Form submission ---
+    // --- Отправка формы ---
     const form = document.getElementById('contactForm');
     const formStatus = document.getElementById('formStatus');
 
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const formData = new FormData(form);
 
-            // Validate
+            // Проверка полей
             const name = formData.get('name').trim();
             const phone = formData.get('phone').trim();
 
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Send via fetch to contact.php
+            // Отправка на contact.php через fetch
             fetch('contact.php', {
                 method: 'POST',
                 body: formData
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 5000);
     }
 
-    // --- Smooth scroll for all anchor links ---
+    // --- Плавная прокрутка по якорным ссылкам ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', (e) => {
             const target = document.querySelector(anchor.getAttribute('href'));

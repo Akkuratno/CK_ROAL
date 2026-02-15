@@ -1,8 +1,13 @@
-/* ===== Reset & Base ===== */
+/* ===== Сброс и база ===== */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -24,6 +29,8 @@
 }
 
 html {
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
@@ -57,7 +64,7 @@ img {
     padding: 100px 0;
 }
 
-/* ===== Section Headers ===== */
+/* ===== Заголовки секций ===== */
 .section__header {
     text-align: center;
     margin-bottom: 60px;
@@ -84,7 +91,7 @@ img {
     color: var(--accent);
 }
 
-/* ===== Buttons ===== */
+/* ===== Кнопки ===== */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -132,13 +139,15 @@ img {
     width: 100%;
 }
 
-/* ===== Header ===== */
+/* ===== Шапка ===== */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    margin: 0;
+    padding-top: 0;
     background: rgba(255,255,255,0.95);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid transparent;
@@ -249,7 +258,7 @@ img {
     border-radius: 2px;
 }
 
-/* ===== Hero ===== */
+/* ===== Главный экран (Hero) ===== */
 .hero {
     position: relative;
     min-height: 100vh;
@@ -367,7 +376,7 @@ img {
     margin-top: 6px;
 }
 
-/* ===== About ===== */
+/* ===== О нас ===== */
 .about {
     background: var(--bg-alt);
 }
@@ -412,7 +421,7 @@ img {
     line-height: 1.7;
 }
 
-/* ===== Services ===== */
+/* ===== Услуги ===== */
 .services__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -483,7 +492,7 @@ img {
     transition: var(--transition);
 }
 
-/* ===== Projects ===== */
+/* ===== Проекты ===== */
 .projects {
     background: var(--bg-alt);
 }
@@ -556,7 +565,7 @@ img {
     color: var(--accent);
 }
 
-/* ===== Advantages ===== */
+/* ===== Преимущества ===== */
 .advantages__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -598,7 +607,7 @@ img {
     line-height: 1.8;
 }
 
-/* ===== CTA ===== */
+/* ===== Призыв к действию (CTA) ===== */
 .cta {
     background: linear-gradient(135deg, var(--primary-dark), var(--primary));
     position: relative;
@@ -632,7 +641,7 @@ img {
     margin: 0 auto 32px;
 }
 
-/* ===== Contacts ===== */
+/* ===== Контакты ===== */
 .contacts__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -678,7 +687,7 @@ img {
     color: var(--accent);
 }
 
-/* ===== Contact Form ===== */
+/* ===== Форма обратной связи ===== */
 .contact-form {
     background: var(--bg-alt);
     padding: 40px;
@@ -756,7 +765,7 @@ img {
     border: 1px solid #f5c6cb;
 }
 
-/* ===== Footer ===== */
+/* ===== Подвал ===== */
 .footer {
     background: var(--bg-dark);
     padding: 60px 0 0;
@@ -814,7 +823,7 @@ img {
     color: rgba(255,255,255,0.3);
 }
 
-/* ===== Animations ===== */
+/* ===== Анимации ===== */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -826,7 +835,7 @@ img {
     transform: translateY(0);
 }
 
-/* ===== Responsive ===== */
+/* ===== Адаптив ===== */
 @media (max-width: 1024px) {
     .about__grid {
         grid-template-columns: repeat(2, 1fr);
@@ -856,13 +865,17 @@ img {
         padding: 24px;
         gap: 16px;
         border-bottom: 1px solid var(--border);
-        transform: translateY(-120%);
-        transition: var(--transition);
+        transform: translateY(-100%);
+        transition: transform var(--transition), opacity var(--transition), visibility var(--transition);
         box-shadow: var(--shadow);
+        visibility: hidden;
+        opacity: 0;
     }
 
     .nav.open {
         transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
     }
 
     .burger {
